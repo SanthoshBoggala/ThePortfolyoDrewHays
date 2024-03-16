@@ -1,0 +1,23 @@
+
+.skill-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.skill-banner {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill-banner > div {
+    margin: 0;
+    padding: 0;
+}
+.skill-banner > div > img {
+    width: 350px;
+    margin: 0;
+    padding: 0;
+}
+

@@ -9,8 +9,6 @@ const Header = () => {
         setIsActive(!isActive);
     };
 
-    console.log(isActive)
-
     return (
         <header className={`header ${isActive ? 'active' : ''}`} data-header>
             <div className="container">

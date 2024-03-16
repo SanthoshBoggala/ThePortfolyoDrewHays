@@ -1,0 +1,25 @@
+.tab-container { border: 1px solid var(--border-eerie-black); }
+
+.tab-btn {
+  width: 100%;
+  padding-block: 16px;
+  border-block-end: 1px solid var(--border-eerie-black);
+  transition: var(--transition-1);
+}
+
+.tab-btn:is(:hover, :focus-visible, .active) { background: var(--bg-eerie-black); }
+
+.tab-btn-list {
+    display: grid;
+    padding-left: 0;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+@media (max-width: 768px) {
+    .tab-btn-list {
+        grid-template-columns: 1fr;
+    }
+}
+.tab-btn {
+    color: white;
+    border:  1px solid var(--border-eerie-black);
+}
