@@ -7,6 +7,8 @@ import Sections from './Components/Sections/Sections';
 import CTA from './Components/CTA/CTA';
 import Projects from './Components/Projects/Projects';
 import Testimonials from './Components/Testimonials/Testimonials';
+import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   const [user, setUser] = useState(null)
@@ -44,8 +46,10 @@ function App() {
           <CTA />
           <Projects projects={user.projects}/>
           <Testimonials testimonials={user.testimonials}/>
+          <Contact />
         </>
       )}
+      <Footer />
     </div>
   );
 }

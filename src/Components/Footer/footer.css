@@ -1,0 +1,20 @@
+.footer {
+    border-block-start: 1px solid var(--border-eerie-black);
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    margin-bottom: 0px;
+    font-family: var(--fontFamily-recoleta);
+}
+
+.back-top-btn {
+    color: var(--text-white);
+    padding: 32px 16px;
+    border-inline: 1px solid var(--border-eerie-black);
+}
