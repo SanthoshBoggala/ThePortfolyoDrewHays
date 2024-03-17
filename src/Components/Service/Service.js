@@ -3,47 +3,27 @@ import React from 'react';
 import Card from './Card';
 import './service.css';
 
-const Service = () => {
+const Service = ({ services }) => {
+
+  let activeServices = services && services.filter(one => one.enabled === true);
+
   return (
     <section className="service text-center" aria-label="my services" id="service">
       <div className="services-container">
         <ul className="service-list">
-          <li className="service-item">
-            <Card iconSrc="./Images/service-icon-1.svg" title="Web Development" />
-          </li>
-          <li className="service-item">
-            <Card iconSrc="./Images/service-icon-2.svg" title="Digital Marketing" />
-          </li>
-          <li className="service-item">
-            <Card iconSrc="./Images/service-icon-3.svg" title="Graphics Design" />
-          </li>
-          <li className="service-item">
-            <Card iconSrc="./Images/service-icon-4.svg" title="Mobile Application" />
-          </li>
-          <li className="service-item">
-            <Card iconSrc="./Images/service-icon-1.svg" title="Web Development" />
-          </li>
-          <li className="service-item">
-            <Card iconSrc="./Images/service-icon-2.svg" title="Digital Marketing" />
-          </li>
-          <li className="service-item">
-            <Card iconSrc="./Images/service-icon-3.svg" title="Graphics Design" />
-          </li>
-          <li className="service-item">
-            <Card iconSrc="./Images/service-icon-4.svg" title="Mobile Application" />
-          </li>
-          <li className="service-item">
-            <Card iconSrc="./Images/service-icon-1.svg" title="Web Development" />
-          </li>
-          <li className="service-item">
-            <Card iconSrc="./Images/service-icon-2.svg" title="Digital Marketing" />
-          </li>
-          <li className="service-item">
-            <Card iconSrc="./Images/service-icon-3.svg" title="Graphics Design" />
-          </li>
-          <li className="service-item">
-            <Card iconSrc="./Images/service-icon-4.svg" title="Mobile Application" />
-          </li>
+          <div className='cardMulti'>
+            <div className="service-card">
+            </div>
+          </div>
+          {activeServices && activeServices.length !== 0 && (
+            activeServices.map((one, index) => {
+              return (
+                <li key={index} className="service-item">
+                  <Card iconSrc={one.image.url} title={one.name} charge={one.charge} />
+                </li>
+              )
+            })
+          )}
         </ul>
       </div>
     </section>

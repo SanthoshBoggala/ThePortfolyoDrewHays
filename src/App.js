@@ -4,6 +4,9 @@ import Header from './Components/Header/Header';
 import Hero from './Components/Hero/Hero';
 import Service from './Components/Service/Service';
 import Sections from './Components/Sections/Sections';
+import CTA from './Components/CTA/CTA';
+import Projects from './Components/Projects/Projects';
+import Testimonials from './Components/Testimonials/Testimonials';
 
 function App() {
   const [user, setUser] = useState(null)
@@ -35,9 +38,12 @@ function App() {
       { user &&
       (
         <>
-          <Hero />
-          <Service />
+          <Hero img={user.about.avatar.url}/>
+          <Service services={user.services}/>
           <Sections user={user}/>
+          <CTA />
+          <Projects projects={user.projects}/>
+          <Testimonials testimonials={user.testimonials}/>
         </>
       )}
     </div>

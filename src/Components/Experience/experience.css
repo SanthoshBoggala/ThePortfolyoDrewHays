@@ -1,7 +1,7 @@
 .experiences {
   height: 500px;
   overflow: scroll;
-  border-bottom: 1px solid var(--border-smoky-black);
+  border: 1px solid var(--border-smoky-black);
 }
 .singleExp {
   display: flex;

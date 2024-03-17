@@ -22,6 +22,9 @@
     justify-content: center;
     align-items: center;
 }
+.about-banner > img {
+  width: 70%;
+}
 
 .img-holder {
     height: auto;
@@ -31,6 +34,7 @@
 .about-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .section-title {
     font-size: 35px;
@@ -51,6 +55,13 @@
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.social-link {
+  width: 30px;
+}
+.social-link > img {
+  width: 100%;
 }
 
 .social-link { color: var(--text-white); }

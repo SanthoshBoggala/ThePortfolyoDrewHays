@@ -13,10 +13,14 @@
 .service-item {
     border-block-end: 1px solid var(--border-eerie-black);
 }
+.cardMulti {
+  display: flex;
+}
 .service-card {
     position: relative;
     padding-block: 45px;
     width: 200px;
+    height: 160px;
     border: 1px solid var(--border-eerie-black);
 }
 .service-card .card-icon {
@@ -50,15 +54,5 @@
 }
 
 .service-list::-webkit-scrollbar {
-  width: 10px; 
-  height: 2px;
-}
-
-.service-list::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
-
-.service-list::-webkit-scrollbar-thumb {
-  background: #6b6b6b; 
-  border-radius: 5px; 
+  display: none;
 }

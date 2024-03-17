@@ -1,7 +1,7 @@
 import React from 'react';
 import './hero.css'; 
 
-const Hero = () => {
+const Hero = ({img}) => {
   return (
     <div className="hero text-center" id="home">
       <div className="container profileShow">
@@ -11,7 +11,6 @@ const Hero = () => {
             <div className="wrapper">
               <a href="#" className="btn btn:hover">
                 <span className="span">Download CV</span>
-                <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
               </a>
               <p className="hero-text">
                 From device to cloud to edge Innovate from anywhere with secure
@@ -22,8 +21,8 @@ const Hero = () => {
 
           </div>
           <div className="banner-outline has-after col-md-6">
-            <div className="hero-banner img-holder has-after" style={{ '--width': '500', '--height': '680' }} data-tilt>
-              <img src="./Images/hero-banner.jpg" width="500" height="680" alt="Drew Hays" className="img-cover" />
+            <div className="hero-banner has-after" data-tilt>
+              <img src={img} width="500" height="680" alt="Drew Hays" className="img-cover" />
             </div>
             <span className="span title">Drew Hays</span>
           </div>

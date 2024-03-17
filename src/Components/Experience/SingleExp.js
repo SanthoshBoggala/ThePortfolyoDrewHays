@@ -12,10 +12,8 @@ const SingleExp = (exp) => {
 
     useEffect(()=>{
         let len = exp.bulletPoints.length
-        setNewBullets(exp.bulletPoints.slice(0, len < 2 ? len : 2))
+        setNewBullets(exp.bulletPoints.slice(0, len < 3 ? len : 3))
     },[exp])
-
-    console.log(newBullets)
 
     return (
         <div className='col-md-4 col-sm-6 col-12 singleExp'>
@@ -23,7 +21,7 @@ const SingleExp = (exp) => {
                 <div className='userImage'>
                     <img src={exp.img} alt='user image'/>
                 </div>
-                <div className='jobTitle'>{exp.jobTitle}</div>
+                <div className='title jobTitle'>{exp.jobTitle}</div>
                 <div className='company_name'>{exp.company_name}</div>
                 <div className='dates'>
                     <div>{stDate + "   -"}</div>
@@ -41,7 +39,7 @@ const SingleExp = (exp) => {
                 </div>
                 <div className='bulletPoints'>
                     {exp.bulletPoints && newBullets.length !== 0 && (
-                        newBullets.map(one => <div>{"* "+ one}</div>)
+                        newBullets.map(one => <div key={one}>{"* "+ one}</div>)
                     )}
                 </div>
             </div>

@@ -25,7 +25,6 @@
 
 .hero-banner {
   position: relative;
-  width: 350px;
   border-radius: var(--radius-pill);
 }
 
@@ -86,4 +85,11 @@
 }
 .title {
   font-size: 70px;
+}
+.hero-banner {
+  width: 320px;
+}
+.hero-banner > img {
+  border-radius: 45%;
+  width: 100%;
 }
