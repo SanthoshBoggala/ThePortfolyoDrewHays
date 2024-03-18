@@ -59,15 +59,22 @@
   z-index: -1;
 }
 
-.hero .shape-1 {
-  top: -60px;
-  left: 120px;
+.shape {
+  position: absolute;
+  height: 90vh;
+}
+
+/* .hero .shape-1 {
+  top: 20%;
+  left: 20%;
 }
 
 .hero .shape-2 {
-  top: 180px;
-  left: 0;
-}
+  top: 20%;
+  left: 20%;
+} */
+
+
 .profileShow {
   position: relative;
 }
@@ -87,9 +94,14 @@
   font-size: 70px;
 }
 .hero-banner {
-  width: 320px;
+  max-width: 320px;
 }
 .hero-banner > img {
   border-radius: 45%;
   width: 100%;
+}
+.hero-cover {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50%;
 }

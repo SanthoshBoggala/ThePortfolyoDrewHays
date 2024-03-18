@@ -1,18 +1,61 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
+.notFound {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 50px;
+}
 
-/**
- * copyright 2022 codewithsadee
- */
+
+.cursor-dot,
+.cursor-outline {
+  display: none;
+}
+
+
+.cursor-dot,
+.cursor-outline {
+  display: block;
+  position: fixed;
+  top: -60px;
+  left: -60px;
+  transform: translate(-50%, -50%);
+  border-radius: var(--radius-circle);
+  z-index: 10;
+  transition-property: opacity, transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  pointer-events: none;
+}
+
+.cursor-dot {
+  width: 60px;
+  height: 60px;
+  background-color: var(--bg-white);
+  transform: translate(-50%, -50%) scale(0.1);
+}
+
+.cursor-dot.hovered {
+  transform: translate(-50%, -50%) scale(1);
+  mix-blend-mode: exclusion;
+}
+
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--border-white);
+  opacity: 0.5;
+  transition-duration: 100ms;
+}
+
+.cursor-outline.hovered {
+  opacity: 0;
+}
 
 
 
-/**
- * RECOLETA FONT
- */
-
- @font-face {
+@font-face {
   font-family: 'Recoleta';
   /* src: local('Recoleta Regular'), local('Recoleta-Regular'),
       url('./recoleta/Recoleta-Regular.woff2') format('woff2'); */
@@ -29,4 +72,3 @@
   font-style: normal;
   font-display: swap;
 }
-

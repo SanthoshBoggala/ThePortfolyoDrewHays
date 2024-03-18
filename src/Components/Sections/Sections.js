@@ -3,7 +3,8 @@ import './sections.css';
 import About from '../About/About';
 import SkillSet from '../SkillSet/SkillSet';
 import Experience from '../Experience/Experience';
-import Reviews from '../Reviews/Reviews';
+import Awards from '../Awards/Awards';
+import Exhibition from '../Exhibition/Exhibition';
 
 const Sections = ({user}) => {
     const [tab, setTab] = useState(0)
@@ -22,12 +23,12 @@ const Sections = ({user}) => {
             compo: <Experience experiences={user.timeline} img={user.about.avatar.url}/>
         },
         {
-            text: "Reviews",
-            compo: <Reviews testimonials={user.testimonials}/>
+            text: "Awards",
+            compo:  <Awards />
         },
         {
             text: "Exhibition",
-            compo: ""
+            compo: <Exhibition />
         }
     ]
     return (

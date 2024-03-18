@@ -18,11 +18,10 @@
   gap: 30px;
 }
 .about-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  place-items: center;
 }
-.about-banner > img {
+.about-cover {
   width: 70%;
 }
 

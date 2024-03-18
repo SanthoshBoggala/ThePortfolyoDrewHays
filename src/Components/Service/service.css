@@ -1,8 +1,6 @@
 
 .service {
-    /* border-block-start: 1px solid var(--border-eerie-black); */
-    /* border-block-end: 1px solid var(--border-eerie-black); */
-    margin-block-start: var(--section-spacing);
+  margin-block-start: var(--section-spacing);
 }
 .service .services-container {
     padding-inline: 0;
@@ -51,8 +49,21 @@
   display: flex;
   justify-content: center;
   overflow-x: auto;
+  border:  1px solid var(--border-eerie-black);
 }
 
 .service-list::-webkit-scrollbar {
+  display: none;
+}
+.service-icon {
+  display: grid;
+  place-items: center;
+}
+
+.service-icon {
+  transition: display 0.3s ease-in-out; /* Add transition for smoother effect */
+}
+
+.service-card:hover .service-icon {
   display: none;
 }

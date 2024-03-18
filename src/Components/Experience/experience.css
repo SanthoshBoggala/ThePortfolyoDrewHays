@@ -1,5 +1,5 @@
 .experiences {
-  height: 500px;
+  height: 550px;
   overflow: scroll;
   border: 1px solid var(--border-smoky-black);
 }
@@ -19,7 +19,7 @@
   border-bottom: 1px solid var(--border-smoky-black);
 }
 .userImage {
-  width: 80px;
+  max-width: 80px;
   border: 1px solid var(--border-smoky-black);
   border-radius: 50%;
   overflow: hidden;

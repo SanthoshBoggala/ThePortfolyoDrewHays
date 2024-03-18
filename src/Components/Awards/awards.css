@@ -1,0 +1,9 @@
+.awards {
+    height: 740px;
+    overflow: scroll;
+}
+.award {
+    max-width: 100%;
+    padding: 10px;
+    background-color: black;
+}

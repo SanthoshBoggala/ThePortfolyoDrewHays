@@ -1,0 +1,24 @@
+.exhibition {
+    height: 470px;
+    overflow: scroll;
+}
+.exhibi {
+    max-width: 100%;
+    padding: 10px;
+    background-color: black;
+}
+.exhibition-card  {
+    position: relative;
+}
+.card-icon {
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    width: 50px;
+    border-radius: 20%;
+    overflow: hidden;
+}
+.card-icon > img {
+    width: 100%;
+    cursor: pointer;
+}

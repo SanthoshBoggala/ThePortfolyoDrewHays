@@ -11,10 +11,6 @@ const Service = ({ services }) => {
     <section className="service text-center" aria-label="my services" id="service">
       <div className="services-container">
         <ul className="service-list">
-          <div className='cardMulti'>
-            <div className="service-card">
-            </div>
-          </div>
           {activeServices && activeServices.length !== 0 && (
             activeServices.map((one, index) => {
               return (

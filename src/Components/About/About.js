@@ -1,6 +1,7 @@
 
 import React from 'react';
 import './about.css';
+import { Tilt } from 'react-tilt';
 
 const About = ({ user }) => {
 
@@ -8,9 +9,11 @@ const About = ({ user }) => {
         <div className="tab-content active" data-tab-content="about">
             <div className="row">
 
-                <figure className="about-banner col-md-6 col-12" data-tilt>
-                    <img src={user.about.avatar.url}  loading="lazy" alt="about banner"
-                        className="img-cover img-holder img-fluid" />
+                <figure className="about-banner col-md-6 col-12">
+                    <Tilt options={{ max: 10, scale: 1 }} >
+                        <img src={user.about.avatar.url} loading="lazy" alt="about banner"
+                            className="about-cover img-fluid" />
+                    </Tilt>
                 </figure>
 
                 <div className="about-content col-md-6 col-12">
@@ -51,12 +54,12 @@ const About = ({ user }) => {
                             <p className="list-title">Social Network</p>
 
                             <div className="social-list">
-                                { (user.social_handles && user.social_handles.length !== 0) ? (
-                                    user.social_handles.map(one=>{
+                                {(user.social_handles && user.social_handles.length !== 0) ? (
+                                    user.social_handles.map(one => {
                                         return (
                                             <a key={one.platform} href="#" className="social-link h6" title={one.platform}>
-                                                <img src={one.image.url} alt="socialmedia image"/>
-                                            </a> 
+                                                <img src={one.image.url} alt="socialmedia image" />
+                                            </a>
                                         )
                                     })
                                 ) : (

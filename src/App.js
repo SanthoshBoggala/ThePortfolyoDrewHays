@@ -25,6 +25,7 @@ function App() {
         const data = await res.json();
         console.log(data.user);
         setUser(data.user);
+
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -35,9 +36,9 @@ function App() {
   },[])
 
   return (
-    <div>
+    <>
       <Header />
-      { user &&
+      { (user && Object.keys(user).length !== 0) ?
       (
         <>
           <Hero img={user.about.avatar.url}/>
@@ -48,9 +49,13 @@ function App() {
           <Testimonials testimonials={user.testimonials}/>
           <Contact />
         </>
+      ) : (
+        <div className='notFound'>
+          User Not Found
+        </div>
       )}
       <Footer />
-    </div>
+    </>
   );
 }
 

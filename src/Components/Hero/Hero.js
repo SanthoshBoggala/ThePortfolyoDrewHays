@@ -1,7 +1,10 @@
 import React from 'react';
-import './hero.css'; 
+import './hero.css';
+import { Tilt } from 'react-tilt';
+import { IonIcon } from "@ionic/react"
 
-const Hero = ({img}) => {
+const Hero = ({ img }) => {
+
   return (
     <div className="hero text-center" id="home">
       <div className="container profileShow">
@@ -11,6 +14,8 @@ const Hero = ({img}) => {
             <div className="wrapper">
               <a href="#" className="btn btn:hover">
                 <span className="span">Download CV</span>
+                <IonIcon name="cloud-download-outline" style={{ color: 'white' }} />
+
               </a>
               <p className="hero-text">
                 From device to cloud to edge Innovate from anywhere with secure
@@ -20,18 +25,23 @@ const Hero = ({img}) => {
           <div className='extraSpaceProfileLarge col-md-6 d-none d-md-block'>
 
           </div>
+
           <div className="banner-outline has-after col-md-6">
-            <div className="hero-banner has-after" data-tilt>
-              <img src={img} width="500" height="680" alt="Drew Hays" className="img-cover" />
-            </div>
-            <span className="span title">Drew Hays</span>
+              <div className="hero-banner has-after" >
+                <Tilt options={{ max: 10, scale: 1 } } >
+                  <img src={img} alt="Drew Hays" className="hero-cover" />
+                </Tilt>
+              </div>
+              <span className="span title">Drew Hays</span>
           </div>
+
+
           <div className="hero-content mt-5 col-md-6 d-md-none">
             <h1 className="h1">Get Your Product Identity From Me.</h1>
             <div className="wrapper">
               <a href="#" className="btn btn:hover">
                 <span className="span">Download CV</span>
-                <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
+                <IonIcon name="cloud-download-outline" style={{ color: 'white' }}/>
               </a>
               <p className="hero-text">
                 From device to cloud to edge Innovate from anywhere with secure

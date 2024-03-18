@@ -1,7 +1,8 @@
 import React from 'react';
 import './skillSet.css';
+import { Tilt } from 'react-tilt';
 
-const SkillSet = ({skills}) => {
+const SkillSet = ({ skills }) => {
     return (
         <div className="tab-content" data-tab-content="skillset">
             <div className="row skillDiv">
@@ -26,7 +27,7 @@ const SkillSet = ({skills}) => {
                             </div>
 
                             <div className="progress-bar">
-                                <div className="progress-fill" style={{"width": "95%"}}></div>
+                                <div className="progress-fill" style={{ "width": "95%" }}></div>
                             </div>
                         </li>
 
@@ -38,7 +39,7 @@ const SkillSet = ({skills}) => {
                             </div>
 
                             <div className="progress-bar">
-                                <div className="progress-fill" style={{"width": "85%"}}></div>
+                                <div className="progress-fill" style={{ "width": "85%" }}></div>
                             </div>
                         </li>
 
@@ -47,9 +48,11 @@ const SkillSet = ({skills}) => {
                 </div>
 
                 <div className='skill-banner col-12 col-md-6'>
-                    <div className="img-holderDiv" data-tilt>
-                        <img src="./Images/skill-banner.jpg"  loading="lazy" alt="skill banner"
-                            className="img-cover img-fluid" />
+                    <div className="img-holderDiv">
+                        <Tilt options={{ max: 10, scale: 1 }} >
+                            <img src="./Images/skill-banner.jpg" loading="lazy" alt="skill banner"
+                                className="img-cover img-fluid" />
+                        </Tilt>
                     </div>
                 </div>
 

@@ -9,17 +9,7 @@ const Card = ({ iconSrc, title }) => {
             <div className="service-card">
                 {title && (
                     <>
-                        <div className="card-icon">
-                            <img src={iconSrc} width="80" height="80" loading="lazy" alt="service icon" />
-                        </div>
-                        <h3 className="card-title">{title}</h3>
-                    </>
-                )}
-            </div>
-            <div className="service-card">
-                {!title && (
-                    <>
-                        <div className="card-icon">
+                        <div className="service-icon">
                             <img src={iconSrc} width="80" height="80" loading="lazy" alt="service icon" />
                         </div>
                         <h3 className="card-title">{title}</h3>
