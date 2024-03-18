@@ -53,8 +53,8 @@ const Hero = ({ img }) => {
           </div>
         </div>
 
-        <img src="./Images/hero-shape-1.png" width="559" height="232" alt="shape" className="shape shape-1" />
-        <img src="./Images/hero-shape-2.png" width="1358" height="497" alt="shape" className="shape shape-2" />
+        <img src="https://s3.ap-south-1.amazonaws.com/santhosh.shreehaven/Portfolyo/hero-shape-1.png" width="559" height="232" alt="shape" className="shape shape-1" />
+        <img src="https://s3.ap-south-1.amazonaws.com/santhosh.shreehaven/Portfolyo/hero-shape-2.png" width="1358" height="497" alt="shape" className="shape shape-2" />
       </div>
     </div>
   );

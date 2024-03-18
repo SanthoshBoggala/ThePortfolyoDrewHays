@@ -70,7 +70,7 @@ const Contact = () => {
                             <li className="contact-item">
 
                                 <div className="item-icon">
-                                    <img src="./Images/contact-icon-1.png" width="50" height="50" loading="lazy" alt="contact icon" />
+                                    <img src="https://s3.ap-south-1.amazonaws.com/santhosh.shreehaven/Portfolyo/contact-icon-1.png" width="50" height="50" loading="lazy" alt="contact icon" />
                                 </div>
 
                                 <div>
@@ -83,7 +83,7 @@ const Contact = () => {
                             <li className="contact-item">
 
                                 <div className="item-icon">
-                                    <img src="./Images/contact-icon-2.png" width="50" height="50" loading="lazy" alt="contact icon" />
+                                    <img src="https://s3.ap-south-1.amazonaws.com/santhosh.shreehaven/Portfolyo/contact-icon-2.png" width="50" height="50" loading="lazy" alt="contact icon" />
                                 </div>
 
                                 <div>
@@ -98,7 +98,7 @@ const Contact = () => {
                             <li className="contact-item">
 
                                 <div className="item-icon">
-                                    <img src="./Images/contact-icon-3.png" width="50" height="50" loading="lazy" alt="contact icon" />
+                                    <img src="https://s3.ap-south-1.amazonaws.com/santhosh.shreehaven/Portfolyo/contact-icon-3.png" width="50" height="50" loading="lazy" alt="contact icon" />
                                 </div>
 
                                 <div>

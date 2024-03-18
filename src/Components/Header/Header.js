@@ -14,7 +14,7 @@ const Header = () => {
             <div className="container">
 
                 <a href="#" className="logo">
-                    <img src="./Images/logo.svg" width="84" height="26" alt="logo" />
+                    <img src="https://s3.ap-south-1.amazonaws.com/santhosh.shreehaven/Portfolyo/logo.svg" width="84" height="26" alt="logo" />
                 </a>
 
                 {!isActive && (
@@ -64,7 +64,7 @@ const Header = () => {
                     <div className="row navbarSideBarTop">
                         <div className='col-10'>
                             <a href="#" onClick={toggleNavbar} className="logo">
-                                <img src="./Images/logo.svg" width="84" height="26" alt="logo" />
+                                <img src="https://s3.ap-south-1.amazonaws.com/santhosh.shreehaven/Portfolyo/logo.svg" width="84" height="26" alt="logo" />
                             </a>
                         </div>
 

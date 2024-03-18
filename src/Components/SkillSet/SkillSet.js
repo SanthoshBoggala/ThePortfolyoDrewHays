@@ -1,8 +1,10 @@
 import React from 'react';
 import './skillSet.css';
 import { Tilt } from 'react-tilt';
+import SingleSkill from './SingleSkill';
 
 const SkillSet = ({ skills }) => {
+    const activeSkills = skills && skills.filter((one) => one.enabled === true)
     return (
         <div className="tab-content" data-tab-content="skillset">
             <div className="row skillDiv">
@@ -17,34 +19,6 @@ const SkillSet = ({ skills }) => {
                         A very small stage in a vast cosmic arena great turbuslent clouds encyclo-paedia galactica star
                         stuff harvesting star light
                     </p>
-
-                    <ul className="skill-list">
-                        <li>
-                            <div className="skill-wrapper">
-                                <span className="">Website Development</span>
-
-                                <span className="value">95%</span>
-                            </div>
-
-                            <div className="progress-bar">
-                                <div className="progress-fill" style={{ "width": "95%" }}></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div className="skill-wrapper">
-                                <span className="span">Design UI & UX</span>
-
-                                <span className="value">85%</span>
-                            </div>
-
-                            <div className="progress-bar">
-                                <div className="progress-fill" style={{ "width": "85%" }}></div>
-                            </div>
-                        </li>
-
-                    </ul>
-
                 </div>
 
                 <div className='skill-banner col-12 col-md-6'>
@@ -56,6 +30,11 @@ const SkillSet = ({ skills }) => {
                     </div>
                 </div>
 
+            </div>
+            <div className='skills row'>
+                {activeSkills && activeSkills.length !== 0 && (
+                    activeSkills.map((one, index) => <SingleSkill key={index} {...one} />)
+                )}
             </div>
         </div>
 

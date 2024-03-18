@@ -20,4 +20,33 @@
     margin: 0;
     padding: 0;
 }
+.skills {
+    padding: 20px 10px;
+    height: 310px;
+    overflow: scroll;
+}
+.singleSkill {
+    border: 1px solid var(--border-eerie-black);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.skillImg {
+    height: 50px;
+    width: 50px;
+}
+.skillImg > img {
+    width: 100%;
+}
+.skillName {
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.badge {
+    padding: 10px;
+    color: white;
+    background-color: rgb(59, 59, 59);
+}
 
