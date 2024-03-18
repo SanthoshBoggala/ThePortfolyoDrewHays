@@ -1,7 +1,9 @@
 import React from 'react';
 import './hero.css';
 import { Tilt } from 'react-tilt';
-import { IonIcon } from "@ionic/react"
+import { IonIcon } from '@ionic/react';
+import { cloudDownloadOutline } from 'ionicons/icons'; 
+
 
 const Hero = ({ img }) => {
 
@@ -14,8 +16,7 @@ const Hero = ({ img }) => {
             <div className="wrapper">
               <a href="#" className="btn btn:hover">
                 <span className="span">Download CV</span>
-                <IonIcon name="cloud-download-outline" style={{ color: 'white' }} />
-
+                <IonIcon icon={cloudDownloadOutline} />
               </a>
               <p className="hero-text">
                 From device to cloud to edge Innovate from anywhere with secure
@@ -41,8 +42,7 @@ const Hero = ({ img }) => {
             <div className="wrapper">
               <a href="#" className="btn btn:hover">
                 <span className="span">Download CV</span>
-                <IonIcon name="cloud-download-outline" style={{ color: 'white' }}/>
-              </a>
+                <IonIcon icon={cloudDownloadOutline} />              </a>
               <p className="hero-text">
                 From device to cloud to edge Innovate from anywhere with secure
               </p>

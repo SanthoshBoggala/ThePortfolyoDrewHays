@@ -19,7 +19,7 @@ const SingleExp = (exp) => {
         <div className='col-md-4 col-sm-6 col-12 singleExp'>
             <div className='expCompanyInfo'>
                 <div className='userImage'>
-                    <img src={exp.img} alt='user image'/>
+                    <img src={exp.url} alt='user'/>
                 </div>
                 <div className='title jobTitle'>{exp.jobTitle}</div>
                 <div className='company_name'>{exp.company_name}</div>

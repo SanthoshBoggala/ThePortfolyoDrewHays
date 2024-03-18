@@ -7,7 +7,7 @@ const Experience = ({experiences,img}) => {
         <div className="tab-content">
             { (experiences && experiences.length !== 0) ? (
                 <div className='row experiences'>
-                    { experiences.map((one, index)=> <SingleExp key={index} {...one} img={img}/>) }
+                    { experiences.map((one, index)=> <SingleExp key={index} {...one} url={img}/>) }
                 </div>
             ) : (
                 <h5>

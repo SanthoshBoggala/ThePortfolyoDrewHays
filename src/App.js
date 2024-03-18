@@ -13,8 +13,10 @@ import Footer from './Components/Footer/Footer';
 function App() {
   const [user, setUser] = useState(null)
 
+  const userId = '65b3a22c01d900e96c4219ae'
+
   useEffect(()=>{
-    const url = `https://portfolio-backend-30mp.onrender.com/api/v1/get/user/65b3a22c01d900e96c4219ae`;
+    const url = `https://portfolio-backend-30mp.onrender.com/api/v1/get/user/${userId}`;
 
     async function getData() {
       try {
@@ -33,7 +35,7 @@ function App() {
     
     getData();
     
-  },[])
+  },[userId])
 
   return (
     <>
